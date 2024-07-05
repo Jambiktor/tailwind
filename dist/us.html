@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <body class="bg-gray-100">
+        <div class="container mx-auto p-6">
+          <nav class="p-6">
+            <a href="../index.html">
+                <h1 class="font-mono font-bold text-xl">Home</h1>
+            </a>
+          </nav>
+    
+          <!-- images -->
+          <div class="grid gap-4">
+            <div class="grid gap-4">
+                <div>
+                  <img id="mainImage" class="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
+                    src="../dist/img/photo_2024-04-09_19-25-15.jpg" alt="gallery-photo" />
+                </div>
+                <div class="grid grid-cols-5 gap-4 ">
+                  <div class="flex items-center justify-center">
+                    <img src="../dist/img/photo_2024-04-12_22-02-53.jpg"
+                      class="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer " alt="gallery-photo" onclick="changeImage(this)" />
+                  </div>
+                  <div class="flex items-center justify-center">
+                    <img src="../dist/img/photo_2024-05-12_20-33-44.jpg"
+                      class="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer" alt="gallery-photo" onclick="changeImage(this)" />
+                  </div>
+                  <div class="flex items-center justify-center">
+                    <img src="../dist/img/photo_2024-05-12_20-34-01.jpg"
+                      class="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer" alt="gallery-photo" onclick="changeImage(this)" />
+                  </div>
+                  <div class="flex items-center justify-center">
+                    <img src="../dist/img/photo_2024-07-05_17-40-07.jpg"
+                      class="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer" alt="gallery-photo" onclick="changeImage(this)" />
+                  </div >
+                  <div class="flex items-center justify-center">
+                    <img src="../dist/img/photo_2024-05-17_22-25-24.jpg"
+                      class="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer" alt="gallery-photo" onclick="changeImage(this)" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-5 gap-4">
+                  <div class="flex items-center justify-center">
+                    <img src="../dist/img/photo_2024-05-17_22-26-09.jpg"
+                      class="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer" alt="gallery-photo" onclick="changeImage(this)" />
+                  </div>
+                  <div class="flex items-center justify-center">
+                    <img src="../dist/img/photo_2024-07-05_17-32-08.jpg"
+                      class="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer" alt="gallery-photo" onclick="changeImage(this)" />
+                  </div>
+                  <div class="flex items-center justify-center">
+                    <img src="../dist/img/photo_2024-07-05_17-32-48.jpg"
+                      class="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer" alt="gallery-photo" onclick="changeImage(this)" />
+                  </div>
+                </div>
+              </div>
+            
+              <script>
+                function changeImage(element) {
+                  document.getElementById('mainImage').src = element.src;
+                }
+              </script>
+          
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+  </body>
+</html>
